@@ -1,0 +1,40 @@
+body {
+  font-family: 'ProximaNova-Regular', sans-serif;
+  color: #2A2928;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.container {
+  max-width: 1945px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.title {
+  font-weight: 700;
+  line-height: 40px;
+  color: #161D3C;
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
+  font-weight: 400;
+  border: none;
+  background: transparent;
+}
+* {
+  &:hover {
+    transition: all 0.3s ease;
+  }
+}
+@import 'global';
+@import 'reset';
+@import 'fonts';
+@import 'header';
+@import 'footer';
+
+@import 'media';
