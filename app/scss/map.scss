@@ -1,0 +1,74 @@
+.map {
+  background-image: url("../images/map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 620px;
+  &__contacts {
+    background-image: url("../images/contacts-bg.svg");
+    background-repeat: no-repeat;
+    padding: 40px 30px 30px;
+    height: 385px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left: -8vw;/* half width*/
+    margin-top:-310px;
+  }
+  &__contacts-title {
+    text-align: left;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    line-height: 38px;
+    color: #039583;
+    margin-bottom: 25px;
+  }
+  &__contacts-item {
+    margin-bottom: 20px;
+    &:nth-child(1) .map__contacts-link:before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -1px;
+      background: url("../images/phone.svg");
+      width: 30px;
+      height: 30px;
+    }
+    &:nth-child(2) .map__contacts-link:before {
+      content: '';
+      position: absolute;
+      top: -3px;
+      left: 0;
+      background: url("../images/mail.svg");
+      width: 30px;
+      height: 30px;
+    }
+    &:nth-child(3) .map__contacts-link:before {
+      content: '';
+      position: absolute;
+      top: -6px;
+      left: 0;
+      background: url("../images/location.svg");
+      width: 30px;
+      height: 30px;
+    }
+    &:nth-child(4) .map__contacts-link:before {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 7px;
+      background: url("../images/clock.svg");
+      width: 19px;
+      height: 19px;
+    }
+    &:nth-child(4) .map__contacts-link {
+      display: block;
+    }
+  }
+  &__contacts-link {
+    position: relative;
+    padding-left: 43px;
+    & span {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,115 @@
+.footer {
+  background: #039583;
+  padding-top: 17px;
+  color: #FAFEFD;
+  &__inner {
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__menu {
+    width: 770px;
+    margin-left: auto;
+    margin-right: 205px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__list-title {
+    text-align: left;
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  &__item {
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 10px;
+  }
+  & .logo {
+    padding: 0;
+  }
+}
+.payments {
+  margin-right: 223px;
+  &__title {
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 7px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+    margin-bottom: 25px;
+  }
+  &__item {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    position: relative;
+    &:nth-child(1) .payments__item-link:before {
+      content: '';
+      position: absolute;
+      background: url("../images/visa.png");
+      width: 32px;
+      height: 10px;
+      top: 10px;
+      left: 8px;
+    }
+    &:nth-child(2) .payments__item-link:before {
+      content: '';
+      position: absolute;
+      background: url("../images/mastercard.png");
+      width: 26px;
+      height: 17px;
+      top: 7px;
+      left: 12px;
+    }
+    &:nth-child(3) .payments__item-link:before {
+      content: '';
+      position: absolute;
+      background: url("../images/mastercard--second.png");
+      width: 26px;
+      height: 16px;
+      top: 8px;
+      left: 12px;
+    }
+    &:nth-child(4) .payments__item-link:before {
+      content: '';
+      position: absolute;
+      background: url("../images/mir.png");
+      width: 32px;
+      height: 10px;
+      top: 10px;
+      left: 10px;
+    }
+  }
+  &__item-link {
+    width: 50px;
+    height: 30px;
+    display: block;
+  }
+}
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 13px;
+  &-item {
+    font-size: 10px;
+    line-height: 26px;
+    color: #FAFEFD;
+    position: relative;
+    padding-right: 15px;
+    &:last-child:after {
+      content: '';
+      position: absolute;
+      background: url("../images/artix.svg");
+      width: 21px;
+      height: 21px;
+      top: 2px;
+      right: -15px;
+    }
+  }
+}

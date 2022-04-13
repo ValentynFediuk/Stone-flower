@@ -25,4 +25,12 @@
     font-weight: 400;
     font-display: swap;
 }
-
+@font-face {
+    font-family: 'BebasNeue-Bold';
+    src: url('../fonts/bebas-neue-bold.woff2') format('woff2'),
+    url('../fonts/bebas-neue-bold.woff') format('woff'),
+    url('../fonts/bebas-neue-bold.ttf') format('ttf');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
